@@ -1,5 +1,6 @@
 from flask import Flask,flash,render_template,request,session,redirect,url_for,g
 from flask_hashing import Hashing
+from sqlalchemy import create_engine
 
 app = Flask(__name__)
 
@@ -17,3 +18,4 @@ def lblog():
 
 if __name__ == "__main__":
     app.run()
+    

@@ -18,6 +18,13 @@
 from abc import ABC
 from typing import List
 from datetime import date
+from flask import Flask,flash,render_template,request,session,redirect,url_for,g
+from flask_hashing import Hashing
+import sqlalchemy
+
+# connect database
+engine = sqlalchemy.create_engine('mysql://root:mina!612@localhost/test',echo=True)
+conn = engine.connect()
 
 class User(ABC):
     """
