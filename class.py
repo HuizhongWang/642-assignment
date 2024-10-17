@@ -24,7 +24,7 @@ import sqlalchemy
 
 # connect database
 engine = sqlalchemy.create_engine('mysql://root:mina!612@localhost/test',echo=True)
-conn = engine.connect()
+
 
 class User(ABC):
     """
